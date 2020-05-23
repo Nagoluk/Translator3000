@@ -8,3 +8,76 @@
     margin-top: 10px;
 }
 
+
+.InputText {
+    display: flex;
+    height: 110px;
+
+}
+
+.Button {
+    width: 150px;
+}
+
+
+.InputText input{
+    flex-direction: column;
+    outline: none;
+    border: 2px solid lightgrey;
+    padding: 30px 20px;
+    font-size: 2em;
+    outline: none;
+    flex-grow: 1;
+}
+
+.InputText button {
+    height: 100%;
+    width: 100%;
+    padding: 30px 20px;
+    border: none;
+    font-size: 2em;
+    border: 2px solid lightgrey;
+}
+
+.Preloader {
+    height: 100%;
+    width: 100%;
+}
+
+.TranslatedText {
+    border: 1px solid lightgrey;
+    padding: 30px 20px;
+    font-size: 2em;
+    min-height: 160px;
+    margin-top: 50px;
+}
+
+@media (max-width: 1200px) {
+    .Wrap {
+        width: 60%;
+    }
+
+    .TranslatedText,  .InputText button, .InputText input{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 730px) {
+    .Wrap {
+        width: 90%;
+    }
+
+    .TranslatedText,  .InputText button, .InputText input{
+        font-size: 16px;
+    }
+
+    .InputText button {
+        padding: 10px;
+    }
+
+    .InputText input{
+        padding: 10px;
+    }
+}
+
+

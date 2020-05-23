@@ -1,14 +1,21 @@
 main {
-  width: 70%;
+  width: 95%;
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
-  padding-top: 10px;
+  padding-top: 50px;
 }
 
 main > div {
-  background: darkgray;
+  background: #fff;
   border-radius: 5px;
   padding: 10px;
   border: 2px dotted white;
+}
+
+@media (max-width: 730px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
 }
